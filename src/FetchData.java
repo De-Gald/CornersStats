@@ -44,8 +44,8 @@ public class FetchData extends JFrame {
         WebElement formElement = driver.findElement(By.id("login"));
         WebElement usernameElement = formElement.findElement(By.name("login"));
         WebElement passwordElement = formElement.findElement(By.name("password"));
-        usernameElement.sendKeys(new CharSequence[]{"rizzborngood@gmail.com"});
-        passwordElement.sendKeys(new CharSequence[]{"UhttlBpUjjl"});
+        usernameElement.sendKeys(new CharSequence[]{"******"});
+        passwordElement.sendKeys(new CharSequence[]{"******"});
         formElement.submit();
 
         while (driver.getCurrentUrl().toCharArray().length < 26) {
